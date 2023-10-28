@@ -1,0 +1,132 @@
+{
+  "parduotuve": {
+    "personalas": {
+      "darbuotojas": [
+        {
+          "vardas": "Karolis",
+          "pavarde": "Karalevicius",
+          "asmens_kodas": 37902115978,
+          "telefono_numeris": 867445678,
+          "pareigos": "Krovikas",
+          "statusas": "Dirbantis",
+          "idarbinimo_data": "2018-03-15",
+          "atleidimo_data": ""
+        },
+        {
+          "vardas": "Tomas",
+          "pavarde": "Tomaitis",
+          "asmens_kodas": 37407194598,
+          "telefono_numeris": 867456789,
+          "pareigos": "Vadybininkas",
+          "statusas": "Dirbantis",
+          "idarbinimo_data": "2014-05-16",
+          "atleidimo_data": ""
+        },
+        {
+          "vardas": "Arturas",
+          "pavarde": "Imavicius",
+          "asmens_kodas": 38711216375,
+          "telefono_numeris": 867493868,
+          "pareigos": "Vairuotojas",
+          "statusas": "Atleistas",
+          "idarbinimo_data": "2013-09-22",
+          "atleidimo_data": "2022-09-13"
+        },
+        {
+          "vardas": "Arturas",
+          "pavarde": "Jakimavicius",
+          "asmens_kodas": 38711216375,
+          "telefono_numeris": 867493868,
+          "pareigos": "Vairuotojas",
+          "statusas": "Dirbantis",
+          "idarbinimo_data": "2014-05-16",
+          "atleidimo_data": ""
+        }
+      ]
+    },
+    "klientai": {
+      "pirkejas": [
+        {
+          "telefono_numeris": 867412345,
+          "vardas": "Jonas",
+          "pavarde": "Jonaitis",
+          "adresas": "Ukmerge, Vilniaus g. 59"
+        },
+        {
+          "telefono_numeris": 867423456,
+          "vardas": "Petras",
+          "pavarde": "Petraitis",
+          "adresas": "Vilnius, Didlaukio g. 59"
+        },
+        {
+          "telefono_numeris": 867434567,
+          "vardas": "Antanas",
+          "pavarde": "Antanaitis",
+          "adresas": "Vilnius, Naugarduko g. 33"
+        }
+      ]
+    },
+    "asortimentas": {
+      "preke": [
+        {
+          "pavadinimas": "Cementas",
+          "kiekis": 200,
+          "didmenine_kaina": 0.12,
+          "mazmenine_kaina": 0.17,
+          "atnaujinimo_data": "2022-11-09",
+          "mato_vienetas": "kg"
+        },
+        {
+          "pavadinimas": "Razinos",
+          "kiekis": 20,
+          "didmenine_kaina": 15,
+          "mazmenine_kaina": 20,
+          "atnaujinimo_data": "2022-12-11",
+          "mato_vienetas": "kg"
+        },
+        {
+          "pavadinimas": "Pienas",
+          "kiekis": 100,
+          "didmenine_kaina": 1.3,
+          "mazmenine_kaina": 1.9,
+          "atnaujinimo_data": "2022-10-21",
+          "mato_vienetas": "l"
+        }
+      ]
+    },
+    "uzsakymai": {
+      "uzsakymas": [
+        {
+          "prekes_id": 1,
+          "prekes_kiekis": 100,
+          "darbuotojo_id": 1,
+          "pirkejo_id": 1,
+          "priemimo_data": "2023-10-03",
+          "ivykdymo_data": "2023-10-17",
+          "busena": "Priimtas",
+          "Prekes_mato_vienetas": "kg"
+        },
+        {
+          "prekes_id": 2,
+          "prekes_kiekis": 5,
+          "darbuotojo_id": 2,
+          "pirkejo_id": 2,
+          "priemimo_data": "2023-10-03",
+          "ivykdymo_data": "2023-10-17",
+          "busena": "Priimtas",
+          "Prekes_mato_vienetas": "kg"
+        },
+        {
+          "prekes_id": 3,
+          "prekes_kiekis": 30,
+          "darbuotojo_id": 4,
+          "pirkejo_id": 3,
+          "priemimo_data": "2022-11-12",
+          "ivykdymo_data": "2022-11-19",
+          "busena": "ivykdytas",
+          "Prekes_mato_vienetas": "l"
+        }
+      ]
+    }
+  }
+}

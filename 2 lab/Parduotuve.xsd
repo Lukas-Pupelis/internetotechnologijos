@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:hr="https://humanresourcesregulations.org"  elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="Personalas.xsd" namespace="https://humanresourcesregulations.org" />
+
+  <xs:element name="parduotuve">
+    <xs:complexType mixed ="true">
+      <xs:sequence>
+        <xs:element ref="hr:personalas" />
+        <xs:element name="klientai" />
+        <xs:element name="asortimentas" />
+        <xs:element name="uzsakymai" />
+      </xs:sequence>
+      <xs:attribute name="xlmns" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="KlientaiType">
+    <xs:choice>
+      <xs:element name="pirkejas" minOccurs="0" maxOccurs="unbounded" />
+    </xs:choice>
+    <xs:attribute name="boundary" type="xs:string" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="AsortimentasType">
+    <xs:choice>
+      <xs:element name="preke" minOccurs="0" maxOccurs="unbounded" />
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="UzsakymaiType">
+    <xs:choice>
+      <xs:element name="uzsakymas" minOccurs="0" maxOccurs="unbounded" />
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="PirkejasType">
+    <xs:sequence>
+      <xs:element name="telefonu_numeriai" type="TelefonuNumeriaiListType" />
+      <xs:element name="vardas" type="xs:string" />
+      <xs:element name="pavarde" type="xs:string" />
+      <xs:element name="adresas" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:unsignedByte" use="required" />
+  </xs:complexType>
+  
+  <xs:simpleType name="TelefonuNumeriaiListType">
+    <xs:list itemType="xs:int"/>
+  </xs:simpleType>
+
+  <xs:complexType name="PrekeType">
+    <xs:sequence>
+      <xs:element name="pavadinimas" type="xs:string" />
+      <xs:element name="kiekis" type="xs:unsignedByte" />
+      <xs:element name="didmenine_kaina" />
+      <xs:element name="mazmenine_kaina" />
+      <xs:element name="atnaujinimo_data" />
+      <xs:element name="mato_vienetas" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:unsignedByte" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="UzsakymasType">
+    <xs:sequence>
+      <xs:element name="prekes_id" type="xs:unsignedByte" />
+      <xs:element name="prekes_kiekis" type="xs:unsignedByte" />
+      <xs:element name="darbuotojo_id" type="xs:unsignedByte" />
+      <xs:element name="pirkejo_id" type="xs:unsignedByte" />
+      <xs:element name="priemimo_data" type="xs:date" />
+      <xs:element name="ivykdymo_data" type="xs:date" />
+      <xs:element name="busena" type="xs:string" />
+      <xs:element name="Prekes_mato_vienetas" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:unsignedByte" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="TelefonoType">
+  <xs:complexContent>
+    <xs:extension base="TelefonuContent">
+      <xs:attribute name="type" type="xs:string" use="required" />
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="TelefonuContent">
+  <xs:simpleContent>
+    <xs:extension base="xs:unsignedInt" />
+  </xs:simpleContent>
+</xs:complexType>
+
+  <xs:complexType name="KainaType">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal">
+        <xs:attribute name="valiuta" type="xs:string" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="DataFormatType">
+    <xs:simpleContent>
+      <xs:extension base="xs:date">
+        <xs:attribute name="format" type="xs:string" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="DataType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="format" type="xs:string" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>
