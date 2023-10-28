@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<parduotuvė xlmns="https://geriausiaparduotuve.lt">
+    <hr:personalas xmlns:hr="https://humanresourcesregulations.org">
+        <hr:darbuotojas id="001">
+            <hr:vardas>Karolis</hr:vardas>
+            <hr:pavardė>Karalevičius</hr:pavardė>
+            <hr:asmens_kodas type="string">37902115978</hr:asmens_kodas>
+            <hr:telefono_numeris type="string">867445678</hr:telefono_numeris>
+            <hr:pareigos>Krovikas</hr:pareigos> 
+            <hr:statusas>Dirbantis</hr:statusas>
+            <hr:įdarbinimo_data format="YYYY-MM-DD">2018-03-15</hr:įdarbinimo_data>
+            <hr:atleidimo_data format="YYYY-MM-DD"></hr:atleidimo_data>
+        </hr:darbuotojas>
+        <hr:darbuotojas id="002">
+            <hr:vardas>Tomas</hr:vardas>
+            <hr:pavardė>Tomaitis</hr:pavardė>
+            <hr:asmens_kodas type="string">37407194598</hr:asmens_kodas>
+            <hr:telefono_numeris type="string">867456789</hr:telefono_numeris>
+            <hr:pareigos>Vadybininkas</hr:pareigos> 
+            <hr:statusas>Dirbantis</hr:statusas>
+            <hr:įdarbinimo_data format="YYYY-MM-DD">2014-05-16</hr:įdarbinimo_data>
+            <hr:atleidimo_data format="YYYY-MM-DD"></hr:atleidimo_data>
+        </hr:darbuotojas>
+        <hr:darbuotojas id="003">
+            <hr:vardas>Artūras</hr:vardas>
+            <hr:pavardė>Imavičius</hr:pavardė>
+            <hr:asmens_kodas type="string">38711216375</hr:asmens_kodas>
+            <hr:telefono_numeris type="string">867493868</hr:telefono_numeris>
+            <hr:pareigos>Vairuotojas</hr:pareigos> 
+            <hr:statusas>Atleistas</hr:statusas>
+            <hr:įdarbinimo_data format="YYYY-MM-DD">2013-09-22</hr:įdarbinimo_data>
+            <hr:atleidimo_data format="YYYY-MM-DD">2022-09-13</hr:atleidimo_data>
+        </hr:darbuotojas>
+        <hr:darbuotojas id="004">
+            <hr:vardas>Artūras</hr:vardas>
+            <hr:pavardė>Jakimavičius</hr:pavardė>
+            <hr:asmens_kodas type="string">38711216375</hr:asmens_kodas>
+            <hr:telefono_numeris type="string">867493868</hr:telefono_numeris>
+            <hr:pareigos>Vairuotojas</hr:pareigos> 
+            <hr:statusas>Dirbantis</hr:statusas>
+            <hr:įdarbinimo_data format="YYYY-MM-DD">2022-09-25</hr:įdarbinimo_data>
+            <hr:atleidimo_data format="YYYY-MM-DD"></hr:atleidimo_data>
+        </hr:darbuotojas>
+    </hr:personalas>
+
+    <klientai>
+        <pirkėjas id="0001">
+            <telefono_numeris type="string">867412345</telefono_numeris>
+            <vardas>Jonas</vardas>
+            <pavardė>Jonaitis</pavardė>
+            <adresas>Ukmerge, Vilniaus g. 59</adresas>
+        </pirkėjas>
+        <pirkėjas id="0002">
+            <telefono_numeris type="string">867423456</telefono_numeris>
+            <vardas>Petras</vardas>
+            <pavardė>Petraitis</pavardė>
+            <adresas>Vilnius, Didlaukio g. 59</adresas>
+        </pirkėjas>
+        <pirkėjas id="0003">
+            <telefono_numeris type="string">867434567</telefono_numeris>
+            <vardas>Antanas</vardas>
+            <pavardė>Antanaitis</pavardė>
+            <adresas>Vilnius, Naugarduko g. 33</adresas>
+        </pirkėjas>
+    </klientai>
+    
+    <asortimentas>
+        <prekė id="001">
+            <pavadinimas>Cementas</pavadinimas>
+            <kiekis>200</kiekis>
+            <didmeninė_kaina valiuta="Eur">0.12</didmeninė_kaina>
+            <mazmeninė_kaina valiuta="Eur">0.17</mazmeninė_kaina>
+            <atnaujinimo_data format="YYYY-MM-DD">2022-11-09</atnaujinimo_data>
+            <mato_vienetas>kg</mato_vienetas> 
+        </prekė>
+        <prekė id="002">
+            <pavadinimas>Razinos</pavadinimas>
+            <kiekis>20</kiekis>
+            <didmeninė_kaina valiuta="Eur">15</didmeninė_kaina>
+            <mazmeninė_kaina valiuta="Eur">20</mazmeninė_kaina>
+            <atnaujinimo_data format="YYYY-MM-DD">2022-12-11</atnaujinimo_data>
+            <mato_vienetas>kg</mato_vienetas> 
+        </prekė>
+        <prekė id="003">
+            <pavadinimas>Pienas</pavadinimas>
+            <kiekis>100</kiekis>
+            <didmeninė_kaina valiuta="Eur">1.3</didmeninė_kaina>
+            <mažmeninė_kaina valiuta="Eur">1.9</mažmeninė_kaina>
+            <atnaujinimo_data format="YYYY-MM-DD">2022-10-21</atnaujinimo_data>
+            <mato_vienetas>l</mato_vienetas> 
+        </prekė>
+    </asortimentas>
+
+    <užsakymai>
+        <užsakymas id="00001">
+            <prekės_id>1</prekės_id>
+            <prekės_kiekis>100</prekės_kiekis>
+            <darbuotojo_id>1</darbuotojo_id>
+            <pirkėjo_id>1</pirkėjo_id>
+            <priėmimo_data format="YYYY-MM-DD">2023-10-03</priėmimo_data>
+            <įvykdymo_data format="YYYY-MM-DD">2023-10-17</įvykdymo_data>
+            <būsena>Priimtas</būsena>
+            <Prekės_mato_vienetas>kg</Prekės_mato_vienetas>
+        </užsakymas>
+        <užsakymas id="00002">
+            <prekės_id>2</prekės_id>
+            <prekės_kiekis>5</prekės_kiekis>
+            <darbuotojo_id>2</darbuotojo_id>
+            <pirkėjo_id>2</pirkėjo_id>
+            <priėmimo_data format="YYYY-MM-DD">2023-10-03</priėmimo_data>
+            <įvykdymo_data format="YYYY-MM-DD">2023-10-17</įvykdymo_data>
+            <būsena>Priimtas</būsena>
+            <Prekės_mato_vienetas>kg</Prekės_mato_vienetas>
+        </užsakymas>
+        <užsakymas id="00003">
+            <prekės_id>3</prekės_id>
+            <prekės_kiekis>30</prekės_kiekis>
+            <darbuotojo_id>4</darbuotojo_id>
+            <pirkėjo_id>3</pirkėjo_id>
+            <priėmimo_data format="YYYY-MM-DD">2022-11-12</priėmimo_data>
+            <įvykdymo_data format="YYYY-MM-DD">2022-11-19</įvykdymo_data>
+            <būsena>įvykdytas</būsena>
+            <Prekės_mato_vienetas>l</Prekės_mato_vienetas>
+        </užsakymas>
+    </užsakymai>
+</parduotuvė>

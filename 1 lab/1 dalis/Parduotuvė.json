@@ -1,0 +1,132 @@
+{
+    "parduotuvė": {
+      "personalas": {
+        "darbuotojas": [
+          {
+            "vardas": "Karolis",
+            "pavardė": "Karalevičius",
+            "asmens_kodas": 37902115978,
+            "telefono_numeris": 867445678,
+            "pareigos": "Krovikas",
+            "statusas": "Dirbantis",
+            "įdarbinimo_data": "2018-03-15",
+            "atleidimo_data": ""
+          },
+          {
+            "vardas": "Tomas",
+            "pavardė": "Tomaitis",
+            "asmens_kodas": 37407194598,
+            "telefono_numeris": 867456789,
+            "pareigos": "Vadybininkas",
+            "statusas": "Dirbantis",
+            "įdarbinimo_data": "2014-05-16",
+            "atleidimo_data": ""
+          },
+          {
+            "vardas": "Artūras",
+            "pavardė": "Imavičius",
+            "asmens_kodas": 38711216375,
+            "telefono_numeris": 867493868,
+            "pareigos": "Vairuotojas",
+            "statusas": "Atleistas",
+            "įdarbinimo_data": "2013-09-22",
+            "atleidimo_data": "2022-09-13"
+          },
+          {
+            "vardas": "Artūras",
+            "pavardė": "Jakimavičius",
+            "asmens_kodas": 38711216375,
+            "telefono_numeris": 867493868,
+            "pareigos": "Vairuotojas",
+            "statusas": "Dirbantis",
+            "įdarbinimo_data": "2014-05-16",
+            "atleidimo_data": ""
+          }
+        ]
+      },
+      "klientai": {
+        "pirkėjas": [
+          {
+            "telefono_numeris": 867412345,
+            "vardas": "Jonas",
+            "pavardė": "Jonaitis",
+            "adresas": "Ukmerge, Vilniaus g. 59"
+          },
+          {
+            "telefono_numeris": 867423456,
+            "vardas": "Petras",
+            "pavardė": "Petraitis",
+            "adresas": "Vilnius, Didlaukio g. 59"
+          },
+          {
+            "telefono_numeris": 867434567,
+            "vardas": "Antanas",
+            "pavardė": "Antanaitis",
+            "adresas": "Vilnius, Naugarduko g. 33"
+          }
+        ]
+      },
+      "asortimentas": {
+        "prekė": [
+          {
+            "pavadinimas": "Cementas",
+            "kiekis": 200,
+            "didmeninė_kaina": 0.12,
+            "mazmeninė_kaina": 0.17,
+            "atnaujinimo_data": "2022-11-09",
+            "mato_vienetas": "kg"
+          },
+          {
+            "pavadinimas": "Razinos",
+            "kiekis": 20,
+            "didmeninė_kaina": 15,
+            "mazmeninė_kaina": 20,
+            "atnaujinimo_data": "2022-12-11",
+            "mato_vienetas": "kg"
+          },
+          {
+            "pavadinimas": "Pienas",
+            "kiekis": 100,
+            "didmeninė_kaina": 1.3,
+            "mažmeninė_kaina": 1.9,
+            "atnaujinimo_data": "2022-10-21",
+            "mato_vienetas": "l"
+          }
+        ]
+      },
+      "užsakymai": {
+        "užsakymas": [
+          {
+            "prekės_id": 1,
+            "prekės_kiekis": 100,
+            "darbuotojo_id": 1,
+            "pirkėjo_id": 1,
+            "priėmimo_data": "2023-10-03",
+            "įvykdymo_data": "2023-10-17",
+            "būsena": "Priimtas",
+            "Prekės_mato_vienetas": "kg"
+          },
+          {
+            "prekės_id": 2,
+            "prekės_kiekis": 5,
+            "darbuotojo_id": 2,
+            "pirkėjo_id": 2,
+            "priėmimo_data": "2023-10-03",
+            "įvykdymo_data": "2023-10-17",
+            "būsena": "Priimtas",
+            "Prekės_mato_vienetas": "kg"
+          },
+          {
+            "prekės_id": 3,
+            "prekės_kiekis": 30,
+            "darbuotojo_id": 4,
+            "pirkėjo_id": 3,
+            "priėmimo_data": "2022-11-12",
+            "įvykdymo_data": "2022-11-19",
+            "būsena": "įvykdytas",
+            "Prekės_mato_vienetas": "l"
+          }
+        ]
+      }
+    }
+  }

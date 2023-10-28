@@ -1,0 +1,26 @@
+1.
+/parduotuve/klientai/ancestor::*
+/parduotuve/klientai/descendant::text()
+/parduotuve/klientai/following-sibling::uzsakymai
+/parduotuve/klientai/preceding-sibling::*
+/parduotuve/klientai/preceding::text()
+/parduotuve/klientai/attribute::*
+2.
+/descendant::preke[didmenine_kaina/text() > 1]/attribute::*
+3.
+count(//text())
+count(//text()[normalize-space()])
+sum(//text()[number(.) = number(.)])
+4.
+/descendant::didmenine_kaina[2]/text() < "desimt"
+/descendant::didmenine_kaina[2]/text() + "desimt"
+/descendant::didmenine_kaina[2]/text() = "desimt"
+5.
+/descendant::klientai[attribute::* = "https://gdpr-info.eu/"]/following-sibling::*/preke[2]/node()/text()
+6.
+/descendant::pirkejas/vardas = 8
+/descendant::hr:darbuotojas/vardas != "Petras"
+/descendant::pirkejas/pavarde = false()
+/descendant::pirkejas/vardas != /descendant::hr:darbuotojas[2]/vardas
+7.
+/descendant::didmenine_kaina[2] > /descendant::didmenine_kaina[3]
