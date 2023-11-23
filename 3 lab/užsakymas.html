@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Užsakymas</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+
+    <body>
+        <header> <h1>Užsakymas</h1></header>
+
+        <nav>
+            <a href="home.html">Pradžia</a>
+            <a href="prekės.html">Prekių asortimentas</a>
+            <a href="užsakymas.html">Užsakymas</a>
+        </nav>
+
+        <form>
+            Vardas: <input required type="text" name = "Vardas"><br>
+            Pavardė: <input required type="text" name = "Pavardė"><br>
+            Telefono numeris: <input required type="text" name = "Telefono numeris"><br>
+            Adresas: <input required type="text" name = "Adresas"><br>
+            Prekė: <select required size="3" name ="Prekė">
+                <option value ="Cementas">Cementas</option>
+                <option value ="Pienas">Pienas</option>
+                <option value ="Razinos">Razinos</option>
+            </select>
+            <br>Kiekis: <input required type="number" name="Kiekis"><br>
+            <input type="reset" value="Ištrinti"><br>
+            <input type="submit" value="Įrašyti">
+        </form>
+    </body>
+</html>
